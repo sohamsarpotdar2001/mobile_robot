@@ -22,6 +22,6 @@ sudo apt update && sudo apt install -y \
   ros-<ros-distro>-turtlebot3-simulations \
   ros-<ros-distro>-turtlebot3* \
   ros-<ros-distro>-ros-gz \
-  ros-humble-navigation2 \
-  ros-humble-nav2-bringup
+  ros-<ros-distro>-navigation2 \
+  ros-<ros-distro>-nav2-bringup
 ```
