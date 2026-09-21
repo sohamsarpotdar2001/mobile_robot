@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="mobile_robot">
+  <link name="bar">
+    <inertial>
+      <mass value="0.0525726" />
+      <origin xyz="1.53395e-19 -3.85186e-34 0.125" rpy="0 -0 0" />
+      <inertia ixx="0.000274555" ixy="0" ixz="0" iyy="0.000274555" iyz="0" izz="1.4786e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 -4.59243e-19 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/bar.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.439216_0.474510_0.501961_0.000000_0.000000">
+        <color rgba="0.439216 0.47451 0.501961 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000000 0.000000 0.125000" rpy="0 0 0" />
+      <geometry>
+        <box size="0.015000 0.014978 0.250000" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="bar_1">
+    <inertial>
+      <mass value="0.0525726" />
+      <origin xyz="1.53395e-19 -3.85186e-34 0.125" rpy="0 -0 0" />
+      <inertia ixx="0.000274555" ixy="0" ixz="0" iyy="0.000274555" iyz="0" izz="1.4786e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 -4.59243e-19 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/bar.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.439216_0.474510_0.501961_0.000000_0.000000">
+        <color rgba="0.439216 0.47451 0.501961 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000000 0.000000 0.125000" rpy="0 0 0" />
+      <geometry>
+        <box size="0.015000 0.014978 0.250000" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="bar_2">
+    <inertial>
+      <mass value="0.0525726" />
+      <origin xyz="1.53395e-19 -3.85186e-34 0.125" rpy="0 -0 0" />
+      <inertia ixx="0.000274555" ixy="0" ixz="0" iyy="0.000274555" iyz="0" izz="1.4786e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 -4.59243e-19 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/bar.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.439216_0.474510_0.501961_0.000000_0.000000">
+        <color rgba="0.439216 0.47451 0.501961 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000000 0.000000 0.125000" rpy="0 0 0" />
+      <geometry>
+        <box size="0.015000 0.014978 0.250000" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="bar_3">
+    <inertial>
+      <mass value="0.0525726" />
+      <origin xyz="1.53395e-19 -3.85186e-34 0.125" rpy="0 -0 0" />
+      <inertia ixx="0.000274555" ixy="0" ixz="0" iyy="0.000274555" iyz="0" izz="1.4786e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 -4.59243e-19 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/bar.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.439216_0.474510_0.501961_0.000000_0.000000">
+        <color rgba="0.439216 0.47451 0.501961 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000000 0.000000 0.125000" rpy="0 0 0" />
+      <geometry>
+        <box size="0.015000 0.014978 0.250000" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="base">
+    <inertial>
+      <mass value="15.1111" />
+      <origin xyz="-0.000219092 -1.73224e-07 0.0499034" rpy="0 -0 0" />
+      <inertia ixx="0.171627" ixy="-1.29454e-07" ixz="4.93826e-05" iyy="0.164228" iyz="5.77083e-09" izz="0.312047" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.713725_0.760784_0.800000_0.000000_0.000000">
+        <color rgba="0.713726 0.760784 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000000 0.000000 0.045000" rpy="0 0 0" />
+      <geometry>
+        <box size="0.374166 0.500716 0.110000" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="caster_socket">
+    <inertial>
+      <mass value="0.0119725" />
+      <origin xyz="7.45081e-19 1.58538e-07 -0.0137698" rpy="0 -0 0" />
+      <inertia ixx="2.20545e-06" ixy="0" ixz="0" iyy="1.71246e-06" iyz="1.15412e-11" izz="1.92329e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="2.23244e-18 -2.41726e-18 -0.022" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/caster_socket.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.713725_0.760784_0.800000_0.000000_0.000000">
+        <color rgba="0.713726 0.760784 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000000 0.000000 0.007000" rpy="0 0 0" />
+      <geometry>
+        <box size="0.026473 0.026474 0.030000" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="caster_wheel">
+    <inertial>
+      <mass value="0.0130779" />
+      <origin xyz="1.10794e-19 -5.30437e-19 -3.80835e-19" rpy="0 -0 0" />
+      <inertia ixx="1.09879e-06" ixy="0" ixz="0" iyy="1.81484e-06" iyz="0" izz="1.09879e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 -1.73472e-18 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/caster_wheel.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.301961_0.301961_0.301961_0.000000_0.000000">
+        <color rgba="0.301961 0.301961 0.301961 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="-1.57079632679 0 0" />
+      <geometry>
+        <cylinder radius="0.017991" length="0.032000" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="depth_camera">
+    <inertial>
+      <mass value="0.10278" />
+      <origin xyz="-0.000224313 -0.00887366 0.0180682" rpy="0 -0 0" />
+      <inertia ixx="1.99451e-05" ixy="-4.72461e-08" ixz="9.49322e-08" iyy="0.000125466" iyz="2.64592e-06" izz="0.000126152" />
+    </inertial>
+    <visual>
+      <origin xyz="5.19288e-05 -0.000172347 0.00608878" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/depth_camera.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000338 -0.000040 0.011011" rpy="0 0 0" />
+      <geometry>
+        <box size="0.124000 0.050425 0.034200" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="plate">
+    <inertial>
+      <mass value="1.56025" />
+      <origin xyz="0.114907 0.0964181 -0.005" rpy="0 -0 0" />
+      <inertia ixx="0.0168214" ixy="0" ixz="0" iyy="0.0163518" iyz="0" izz="0.0331472" />
+    </inertial>
+    <visual>
+      <origin xyz="0.114907 0.0964181 -0.01" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/plate.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.713725_0.760784_0.800000_0.000000_0.000000">
+        <color rgba="0.713726 0.760784 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.114907 0.0964181 -0.005000" rpy="0 0 0" />
+      <geometry>
+        <box size="0.374166 0.380716 0.010000" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="root" />
+  <link name="rplidar">
+    <inertial>
+      <mass value="0.0997506" />
+      <origin xyz="0.0100884 3.53251e-05 0.0151831" rpy="0 -0 0" />
+      <inertia ixx="4.28612e-05" ixy="2.8632e-07" ixz="1.36569e-05" iyy="8.02911e-05" iyz="-1.31345e-06" izz="8.83408e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="8.3964e-05 -0.000444572 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/rplidar.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.898039_0.913725_0.925490_0.000000_0.000000">
+        <color rgba="0.898039 0.913725 0.92549 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.013251 -0.000034 0.013300" rpy="0 0 0" />
+      <geometry>
+        <box size="0.099000 0.070926 0.056600" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="wheel_left">
+    <inertial>
+      <mass value="0.922424" />
+      <origin xyz="0.0037479 1.94871e-16 -2.1079e-15" rpy="0 -0 0" />
+      <inertia ixx="0.00462916" ixy="0" ixz="0" iyy="0.00240533" iyz="0" izz="0.00240533" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -7.65404e-19" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/wheel.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.301961_0.301961_0.301961_0.000000_0.000000">
+        <color rgba="0.301961 0.301961 0.301961 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0 1.57079632679 0" />
+      <geometry>
+        <cylinder radius="0.099117" length="0.050000" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="wheel_right">
+    <inertial>
+      <mass value="0.922424" />
+      <origin xyz="0.0037479 1.94871e-16 -2.1079e-15" rpy="0 -0 0" />
+      <inertia ixx="0.00462916" ixy="0" ixz="0" iyy="0.00240533" iyz="0" izz="0.00240533" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -7.65404e-19" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/wheel.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.301961_0.301961_0.301961_0.000000_0.000000">
+        <color rgba="0.301961 0.301961 0.301961 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000000 0.000000 0.000000" rpy="0 1.57079632679 0" />
+      <geometry>
+        <cylinder radius="0.099117" length="0.050000" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="bar_to_base1" type="fixed">
+    <origin xyz="0.114907 -0.0964181 0.05" rpy="0 -0 0" />
+    <axis xyz="0 0 -1" />
+    <parent link="base" />
+    <child link="bar_1" />
+  </joint>
+  <joint name="bar_to_base2" type="fixed">
+    <origin xyz="-0.114907 -0.0964181 0.05" rpy="0 -0 0" />
+    <axis xyz="0 0 -1" />
+    <parent link="base" />
+    <child link="bar_3" />
+  </joint>
+  <joint name="bar_to_base3" type="fixed">
+    <origin xyz="0.114907 0.0964181 0.05" rpy="0 -0 0" />
+    <axis xyz="0 0 -1" />
+    <parent link="base" />
+    <child link="bar" />
+  </joint>
+  <joint name="bar_to_base4" type="fixed">
+    <origin xyz="-0.114907 0.0964181 0.05" rpy="0 -0 0" />
+    <axis xyz="0 0 -1" />
+    <parent link="base" />
+    <child link="bar_2" />
+  </joint>
+  <joint name="caster_socket_to_base" type="continuous">
+    <origin xyz="0.12 -1.14925e-17 -0.01" rpy="0 -0 0" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="0.5" friction="0.05"/>
+    <parent link="base" />
+    <child link="caster_socket" />
+  </joint>
+  <joint name="caster_wheel_to_socket" type="continuous">
+    <origin xyz="0 5e-07 -0.022" rpy="0 -0 0" />
+    <axis xyz="0 1 0" />
+    <dynamics damping="0.5" friction="0.05"/>
+    <parent link="caster_socket" />
+    <child link="caster_wheel" />
+  </joint>
+  <joint name="depth_camera_to_base" type="fixed">
+    <origin xyz="-0.12 -1.20889e-16 0.1" rpy="0 0 -1.5708" />
+    <axis xyz="0 0 -1" />
+    <parent link="base" />
+    <child link="depth_camera" />
+  </joint>
+  <joint name="hanging_node_to_root_joint" type="fixed">
+    <origin xyz="-0.000225828 -0.000582711 -0.0756785" rpy="0 -0 0" />
+    <axis xyz="0 0 1" />
+    <parent link="root" />
+    <child link="base" />
+  </joint>
+  <joint name="plate_to_bar" type="fixed">
+    <origin xyz="-1.38778e-17 0 0.25" rpy="0 -0 0" />
+    <axis xyz="0 0 -1" />
+    <parent link="bar_3" />
+    <child link="plate" />
+  </joint>
+  <joint name="rplidar_to_plate" type="fixed">
+    <origin xyz="-0.00509333 0.0964181 0.015" rpy="0 0 0" />
+    <axis xyz="0 0 -1" />
+    <parent link="plate" />
+    <child link="rplidar" />
+  </joint>
+  <joint name="wheel_left_to_base" type="continuous">
+    <origin xyz="-0.06 -0.220358 0.05" rpy="1.5708 -0 -1.5708" />
+    <axis xyz="1 0 0" />
+    <dynamics damping="0.5" friction="0.05"/>
+    <parent link="base" />
+    <child link="wheel_left" />
+  </joint>
+  <joint name="wheel_right_to_base" type="continuous">
+    <origin xyz="-0.06 0.220358 0.05" rpy="-1.5708 -0 1.5708" />
+    <axis xyz="-1 0 0" />
+    <dynamics damping="0.5" friction="0.05"/>
+    <parent link="base" />
+    <child link="wheel_right" />
+  </joint>
+
+  <gazebo reference="wheel_left">
+    <mu1>2.0</mu1>
+    <mu2>2.0</mu2>
+    <kp>1000000.0</kp>
+    <kd>100.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+  </gazebo>
+
+  <gazebo reference="wheel_right">
+    <mu1>2.0</mu1>
+    <mu2>2.0</mu2>
+    <kp>1000000.0</kp>
+    <kd>100.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+  </gazebo>
+
+  <gazebo reference="caster_wheel">
+    <mu1>0.3</mu1>
+    <mu2>0.3</mu2>
+  </gazebo>
+
+
+  <!-- Depth Camera controller plugin -->
+  <gazebo reference="depth_camera">
+    <sensor name="depth_camera" type="rgbd_camera">
+      <pose>-0.120226 -0.0 0.0243214 0 0 -1.5708</pose>
+      <always_on>1</always_on>
+      <update_rate>30</update_rate>
+      <topic>/camera</topic>
+      <camera name="intel_realsense_d455">
+        <horizontal_fov>1.50098</horizontal_fov>
+        <lens>
+          <intrinsics>
+            <!-- fx = fy = width / ( 2 * tan (hfov / 2 ) ) -->
+            <fx>343.159</fx>
+            <fy>343.159</fy>
+            <!-- cx = ( width - 1 ) / 2 -->
+            <cx>319.5</cx>
+            <!-- cy = ( height - 1 ) / 2 -->
+            <cy>179.5</cy>
+            <s>0</s>
+          </intrinsics>
+        </lens>
+        <distortion>
+          <k1>0.0</k1>
+          <k2>0.0</k2>
+          <k3>0.0</k3>
+          <p1>0.0</p1>
+          <p2>0.0</p2>
+          <center>0.5 0.5</center>
+        </distortion>
+        <image>
+          <width>640</width>
+          <height>360</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.01</near>
+          <far>300</far>
+        </clip>
+        <depth_camera>
+          <clip>
+            <near>0.1</near>
+            <far>10</far>
+          </clip>
+        </depth_camera>
+        <noise>
+          <type>gaussian</type>
+          <mean>0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+    </sensor>
+  </gazebo>
+
+  <!-- Lidar controller plugin -->
+  <gazebo reference="rplidar">
+    <sensor type="gpu_lidar" name="rplidar">
+      <pose>0 0 0 0 0 3.14159265359</pose>
+      <visualize>true</visualize>
+      <update_rate>10</update_rate>
+      <always_on>1</always_on>
+
+      <topic>/scan</topic>
+
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1.0</resolution>
+            <min_angle>0.0</min_angle>
+            <max_angle>6.284</max_angle>
+          </horizontal>
+        </scan>
+
+        <range>
+          <min>0.10</min>
+          <max>3.5</max>
+          <resolution>0.015</resolution>
+        </range>
+
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+    </sensor>
+  </gazebo>
+
+  <gazebo>
+    <plugin filename="gz-sim-diff-drive-system"
+        name="gz::sim::systems::DiffDrive">
+
+      <left_joint>wheel_left_to_base</left_joint>
+      <right_joint>wheel_right_to_base</right_joint>
+
+      <wheel_separation>0.440716</wheel_separation>
+      <wheel_radius>0.099117</wheel_radius>
+
+      <topic>/cmd_vel</topic>
+
+      <odom_topic>/odom</odom_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>root</child_frame_id>
+
+      <odom_publish_frequency>30</odom_publish_frequency>
+      <tf_topic>/tf</tf_topic>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
+      <topic>/joint_states</topic>
+      <joint_name>wheel_left_to_base</joint_name>
+      <joint_name>wheel_right_to_base</joint_name>
+      <joint_name>caster_socket_to_base</joint_name>
+      <joint_name>caster_wheel_to_socket</joint_name>
+    </plugin>
+  </gazebo>
+
+
+</robot>
