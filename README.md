@@ -37,7 +37,7 @@ sudo apt update && sudo apt install -y \
 * Login to [Onshape](https://www.onshape.com/en/) and create a robot model.
 * Make every part in a seperate Part Studio and import them later in the Assembly.
 * Avoid using sub-assemblies in the final robot assembly. Sub-assemblies are exported with all its contained meshes instead of one single part, so the urdf file includes them as seperate links.
-    * To make a single part from an assembly, open the part studio and use `Union` or `Boolean` functions to fuse all the parts into one single part.
+  * To make a single part from an assembly, open the part studio and use `Union` or `Boolean` functions to fuse all the parts into one single part.
 * Rename every joint according to the link names.
 * Export the assembly as URDF. Meshes type - STL(Binary)
 * Extract the `meshes` and `urdf` directories.
@@ -49,3 +49,10 @@ sudo apt update && sudo apt install -y \
 
 ---
 
+## URDF Plugins
+Add plugins for sensors and robot controller
+Refer these for syntax - 
+* https://github.com/maponarooo/URDF-Gazebo-Harmonic-sensors
+* https://medium.com/@alitekes1/gazebo-sim-plugin-and-sensors-for-acquire-data-from-simulation-environment-681d8e2ad853
+
+Also, take a look at `urdf/mobile_robot.urdf` in the repo.
