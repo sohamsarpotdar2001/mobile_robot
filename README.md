@@ -43,9 +43,9 @@ sudo apt update && sudo apt install -y \
 * Extract the `meshes` and `urdf` directories.
 
 > Onshape's URDF exporter does not add collision tags to the extracted links. Do it manually using the `add_collisions.py` script.
-  ```
-  python3 add_collisions.py robot.urdf
-  ```
+> ```
+> python3 add_collisions.py robot.urdf robot_with_collisions.urdf
+> ```
 
 ---
 
@@ -56,3 +56,80 @@ Refer these for syntax -
 * https://medium.com/@alitekes1/gazebo-sim-plugin-and-sensors-for-acquire-data-from-simulation-environment-681d8e2ad853
 
 Also, take a look at `urdf/mobile_robot.urdf` in the repo.
+
+---
+
+## Launch setup
+Setup ROS 2 workspace
+```
+cd $HOME
+mkdir -p ros2_ws/src; cd ros2_ws/src
+git clone https://github.com/sohamsarpotdar2001/mobile_robot.git
+```
+
+Copy your `robot_with_collisions.urdf` file to `mobile_robot/urdf/` directory.
+Edit the `launch/assembly_launch.py` file to replace the line 13 with `robot_with_collisions.urdf` name.
+
+Build the workspace
+```
+cd ~/ros2_ws
+colcon build --packages-select mobile_robot
+echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+
+Launch the robot
+```
+ros2 launch mobile_robot assembly_launch.py
+```
+
+---
+
+## Gazebo Simulation
+
+### Create SDF from URDF
+Move your robot meshes to the repo
+```
+mv ~/meshes/* ~/ros2_ws/src/mobile_robot/meshes
+```
+
+Generate SDF
+```
+cd ~/ros2_ws/src/mobile_robot/urdf
+gz sdf robot_with_collisions.urdf robot.sdf
+```
+
+Move sdf file to `models` directory of the repo.
+```
+cd ~/ros2_ws/src/mobile_robot/models
+mkdir robot
+mv ../urdf/robot.sdf robot/model.sdf
+```
+
+Copy `model.config` from mobile_robot to robot direectory
+```
+cp models/mobile_robot/model.config models/robot/model.config
+```
+Edit `model.config` to change the name of the model to `robot`
+
+Inspect the generated SDF
+```
+export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:~/ros2_ws/install/mobile_robot/share/
+cd mobile_robot/models/robot
+gz sim model.sdf
+```
+
+Check if all the links and joints are positioned properly. Look at the collision geometries by right-clicking the model -> View -> collisions.
+Edit the sdf file accordingly if needed.
+
+### Gazebo launch file
+Edit the `launch/gazebo_launch.py` file to change the `urdf_file` and `model_path` variables.
+If your robot does not have a camera, remove the `ros_gz_image` variable.
+
+Edit the `config/bridge_config.yaml` file to change the topics according to the plugins configured in urdf file.
+
+Launch the robot in gazebo
+```
+colcon build --packages-select mobile_robot
+ros2 launch mobile_robot gazebo_launch.py
+```
