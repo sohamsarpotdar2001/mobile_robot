@@ -41,7 +41,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(DIRECTORY launch config urdf meshes models
+install(DIRECTORY launch config urdf meshes models worlds
     DESTINATION share/${PROJECT_NAME}
 )
 

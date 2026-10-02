@@ -45,12 +45,12 @@ def generate_launch_description():
 
     declare_world_cmd = DeclareLaunchArgument(
         'world',
-        default_value='empty_world.world',
+        default_value='test_world.world',
         description='Gazebo world file'
     )
 
     world_path = PathJoinSubstitution([
-        get_package_share_directory('turtlebot3_gazebo'),
+        pkg_path,
         'worlds',
         world
     ])
