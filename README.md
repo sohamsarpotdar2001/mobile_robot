@@ -23,9 +23,6 @@ Run the following command to install required ROS 2 dependencies:
 sudo apt update && sudo apt install -y \
   ros-$ROS_DISTRO-robot-state-publisher \
   ros-$ROS_DISTRO-joint-state-publisher \
-  ros-$ROS_DISTRO-rviz2 \
-  ros-$ROS_DISTRO-turtlebot3-simulations \
-  ros-$ROS_DISTRO-turtlebot3* \
   ros-$ROS_DISTRO-ros-gz \
   ros-$ROS_DISTRO-navigation2 \
   ros-$ROS_DISTRO-nav2-bringup
