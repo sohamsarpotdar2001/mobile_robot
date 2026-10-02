@@ -7,7 +7,7 @@ A ROS 2 & Gazebo simulation package for a differential-drive mobile robot. This 
 ## Prerequisites & Dependencies
 
 ### System Tested with
-* **OS:** Ubuntu 22.04 LTS (or Ubuntu 24.04 LTS)
+* **OS:** Ubuntu 24.04 LTS
 * **ROS 2:** Jazzy Jalisco
 * **Simulator:** Gazebo Harmonic
 
